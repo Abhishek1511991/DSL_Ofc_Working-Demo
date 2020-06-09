@@ -1,5 +1,29 @@
 # DSL_Ofc_Working Demo
 
+# Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
+
+Step 1: Update Setting.gradle to setting.gradle.kts
+Step 2: Remove existing setting.gradle and updated file write as rootProject.name = "project Name" include ("app","","",etc)
+Step 3: Create a folder buildSrc where we but Gradle file setting.
+Step 4: Create build.gradle.kts file and write below text and Sync project
+		repositories {
+			jcenter()
+		}
+		plugins {
+			`kotlin-dsl`
+		}
+Step 5: Create file Config.kt under buildSrc folder (src/main/java/Config.kt) 
+			object Config
+			{
+			}
+			
+Step 6: Open Gradle setting from Right Side in android Studio and Off "Toggle Offline Mode"
+
+Step 7: Convert All Gradle App / project into the gradle.kts and Import All dependency from Config file
+
+Step 8: Convert Project level Gradle and App Level gradle to gradle.kts and do specified changes according to Kts
+
+
 #Part 1 :
 ------------------------------------------------------------------------------------------------
 It has been a long time since we wrote a Gradle with a script called Groovy, but finally, there is something new 😮.
