@@ -25,6 +25,10 @@ run {
     }
 }
 
+/*tasks.register("clean", Delete::class) {
+  delete(rootProject.buildDir)
+    }*/
+
 task("clean").configure {
     delete("build")
 }

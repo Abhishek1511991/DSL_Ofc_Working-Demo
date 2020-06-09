@@ -5,17 +5,10 @@ import org.gradle.kotlin.dsl.repositories
 
 
 plugins {
-    //id("com.android.application")
-    id(Config.androidApplication)
-      
-    //kotlin("android")
-    id(BuildPlugins.kotlinAndroid)
-    
-    
-    //kotlin("kapt")
-    id(BuildPlugins.kotlinKept)
-    
-     id(BuildPlugins.kotlinAndroidExtensions)
+    id("com.android.application")
+    kotlin("android")
+    kotlin("android.extensions")
+    kotlin("kapt")
 }
 
 application {
@@ -26,6 +19,8 @@ android {
 
     compileSdkVersion(Config.Android.compileSdkVersion)
     buildToolsVersion(Config.Android.buildToolsVersion)
+    
+   
   
     defaultConfig {
         applicationId = Config.Android.applicationId
@@ -33,6 +28,8 @@ android {
         targetSdkVersion(Config.Android.targetSdkVersion)
         versionCode = Config.Android.versionCode
         versionName = Config.Android.versionName
+        
+        setProperty("archivesBaseName", "$applicationId-v$versionName($versionCode)")
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
         
     }
@@ -52,6 +49,10 @@ android {
                     proguardFiles("proguard-rules.pro")
                 }
     }
+    
+    
+    
+    
 }
 
 
