@@ -1,6 +1,6 @@
 # DSL_Ofc_Working Demo
 
-https://miro.medium.com/max/560/1*UlNDLLEKHZVYu6XvjlNKFA.jpeg
+
 
 # Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
 
