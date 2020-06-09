@@ -156,11 +156,18 @@ Finally, we can get auto suggestions now in our Gradle file.
 
 # Below are the other links for Kotlin DSL References Material..
 
-https://www.droidcon.com/news-detail?content-id=/repository/collaboration/Groups/spaces/droidcon_hq/Documents/public/news/android-news/Converting%20your%20Android%20Gradle%20scripts%20to%20Kotlin
+https://www.droidcon.com/news-detail?content-id=/repository/collaboration/Groups/spaces/droidcon_hq/ Documents/public /news /android-news/Converting%20your%20Android%20Gradle%20scripts%20to%20Kotlin
+
 https://kotlinlang.org/docs/reference/using-gradle.html
+
 https://medium.com/@napperley/gradle-kotlin-dsl-tutorial-223370af9cd8
+
 https://proandroiddev.com/the-new-way-of-writing-build-gradle-with-kotlin-dsl-script-8523710c9670
+
 https://docs.gradle.org/current/userguide/kotlin_dsl.html#sec:multi_project_builds
+
 https://docs.gradle.org/current/userguide/kotlin_dsl.html#kotdsl:containers
+
 https://docs.gradle.org/current/userguide/kotlin_dsl.html#type-safe-accessors
+
 https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:build_sources
