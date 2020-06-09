@@ -156,7 +156,7 @@ Finally, we can get auto suggestions now in our Gradle file.
 
 # Below are the other links for Kotlin DSL References Material..
 
-https://www.droidcon.com/news-detail?content-id=/repository/collaboration/Groups/spaces/droidcon_hq/ Documents/public /news /android-news/Converting%20your%20Android%20Gradle%20scripts%20to%20Kotlin
+https://www.droidcon.com/news-detail?content-id=/repository/collaboration/Groups/spaces/droidcon_hq/ Documents/public/news/android-news/Converting%20your%20Android%20Gradle%20scripts%20to%20Kotlin
 
 https://kotlinlang.org/docs/reference/using-gradle.html
 
