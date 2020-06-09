@@ -1,6 +1,6 @@
 # DSL_Ofc_Working Demo
 
-Part 1 :
+#Part 1 :
 ------------------------------------------------------------------------------------------------
 It has been a long time since we wrote a Gradle with a script called Groovy, but finally, there is something new 😮.
 Kotlin DSL comes with autocomplete, navigation to resource, checking error at compile time and make code readable. 
@@ -97,7 +97,7 @@ Yey! Sync project and your project is converted in Kotlin build scripts. As you 
 It could be that your project is more complicated, but it’s only a matter of time until you get used to it. 😎
 
 
-Part 2 :
+#Part 2 :
 -----------------------------------------------------------------------------------------------
 
  Let's go step by step on how we can achieve this.
