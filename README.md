@@ -1,5 +1,7 @@
 # DSL_Ofc_Working Demo
 
+# https://github.com/gradle/kotlin-dsl-samples/tree/master/samples/buildSrc-plugin link is very useful to unserstand demo
+
 
 
 # Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
@@ -155,6 +157,8 @@ Finally, we can get auto suggestions now in our Gradle file.
 
 
 # Below are the other links for Kotlin DSL References Material..
+
+https://github.com/antoniolg/Bandhook-Kotlin
 
 https://www.droidcon.com/news-detail?content-id=/repository/collaboration/Groups/spaces/droidcon_hq/ Documents/public/news/android-news/Converting%20your%20Android%20Gradle%20scripts%20to%20Kotlin
 
