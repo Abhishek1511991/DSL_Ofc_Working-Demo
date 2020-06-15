@@ -1,5 +1,7 @@
 # DSL_Ofc_Working Demo
 
+# https://github.com/gradle/kotlin-dsl-samples/tree/master/samples/buildSrc-plugin link is very useful to unserstand demo
+
 
 
 # Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
