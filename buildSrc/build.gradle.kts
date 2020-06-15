@@ -11,3 +11,12 @@ plugins {
 kotlinDslPluginOptions {
     experimentalWarning.set(false)
 }
+
+gradlePlugin {
+    plugins {
+        register("abhi-plugin") {
+            id = "abhi"
+            implementationClass = "AbhiPlugin"
+        }
+    }
+}
