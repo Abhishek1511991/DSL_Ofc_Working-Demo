@@ -1,34 +1,34 @@
 # DSL_Ofc_Working Demo
 
-# https://github.com/gradle/kotlin-dsl-samples/tree/master/samples/buildSrc-plugin link is very useful to unserstand demo
+* https://github.com/gradle/kotlin-dsl-samples/tree/master/samples/buildSrc-plugin 
 
+link is very useful to unserstand demo
 
+## Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
 
-# Below are the Steps must be follow if ypur want to start on Kotlin DLS ..
-
-## Step 1: Update Setting.gradle to setting.gradle.kts
-## Step 2: Remove existing setting.gradle and updated file write as rootProject.name = "project Name" include ("app","" , "",etc)
-## Step 3: Create a folder buildSrc where we but Gradle file setting.
-## Step 4: Create build.gradle.kts file and write below text and Sync project
+###  Step 1: Update Setting.gradle to setting.gradle.kts
+###  Step 2: Remove existing setting.gradle and updated file write as rootProject.name = "project Name" include ("app","" , "",etc)
+###  Step 3: Create a folder buildSrc where we but Gradle file setting.
+###  Step 4: Create build.gradle.kts file and write below text and Sync project
 		repositories {
 			jcenter()
 		}
 		plugins {
 			`kotlin-dsl`
 		}
-## Step 5: Create file Config.kt under buildSrc folder (src/main/java/Config.kt) 
+###  Step 5: Create file Config.kt under buildSrc folder (src/main/java/Config.kt) 
 			object Config
 			{
 			}
 			
-## Step 6: Open Gradle setting from Right Side in android Studio and Off "Toggle Offline Mode"
+###  Step 6: Open Gradle setting from Right Side in android Studio and Off "Toggle Offline Mode"
 
-## Step 7: Convert All Gradle App / project into the gradle.kts and Import All dependency from Config file
+###  Step 7: Convert All Gradle App / project into the gradle.kts and Import All dependency from Config file
 
-## Step 8: Convert Project level Gradle and App Level gradle to gradle.kts and do specified changes according to Kts
+###  Step 8: Convert Project level Gradle and App Level gradle to gradle.kts and do specified changes according to Kts
 
 
-#Part 1 :
+### Part 1 :
 ------------------------------------------------------------------------------------------------
 It has been a long time since we wrote a Gradle with a script called Groovy, but finally, there is something new 😮.
 Kotlin DSL comes with autocomplete, navigation to resource, checking error at compile time and make code readable. 
@@ -36,7 +36,7 @@ Kotlin DSL comes with autocomplete, navigation to resource, checking error at co
 How to use Kotlin script on Gradle? Just follow the steps.
 FYI, when writing this I use com.android.tools.build:gradle:3.5.0 and on gradle-wrapper 5.4.1
 
-## Step 1 — Create buildSrc
+### Step 1 — Create buildSrc
 
 buildSrc folder
 Let’s start with create buildSrc on your root folder include two files, first build.gradle.kts
@@ -54,7 +54,7 @@ then Dependencies.kt on src/main/java
 Dependencies.kt
 and try Sync Project with Gradle Files
 
-## Step 2 — Convert settings.gradle
+###  Step 2 — Convert settings.gradle
 Rename settings.gradle to settings.gradle.kts and now you can use kotlin scripts
 Before
 include ':app', ':data', ':framework'
@@ -62,7 +62,7 @@ After
 include(":app", ":framework", ":data")
 
 
-## Step 3 — Convert build.gradle Project
+###  Step 3 — Convert build.gradle Project
 Rename again build.gradle to build.gradle.kts and change dependencies block before
 dependencies {
     classpath 'com.android.tools.build:gradle:3.5.0'
@@ -95,7 +95,7 @@ repositories {
 }
 
 
-## Step 4 — Convert build.gradle App
+###  Step 4 — Convert build.gradle App
 Now you will start to get confused for scripts that are quite complex 😨 rename build.gradle to build.gradle.kts
 On plugin block before
 apply plugin: 'com.android.application'
